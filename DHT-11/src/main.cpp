@@ -69,18 +69,18 @@ void loop() {
     BTSerial.println("DHT 센서 오류");
   }else{
     Serial.print("온도: ");
-  Serial.print(temperature);
-  Serial.print("°C 습도: ");
-  Serial.print(humidity);
-  Serial.print("% 토양 습도: ");
-  Serial.print(soilMoistureValue);
+    Serial.print(temperature);
+    Serial.print("°C 습도: ");
+    Serial.print(humidity);
+    Serial.print("% 토양 습도: ");
+    Serial.print(soilMoistureValue);
 
-  BTSerial.print("온도: ");
-  BTSerial.print(temperature);
-  BTSerial.print("°C 습도: ");
-  BTSerial.print(humidity);
-  BTSerial.print("% 토양 습도: ");
-  BTSerial.print(soilMoistureValue);
+    BTSerial.print("온도: ");
+    BTSerial.print(temperature);
+    BTSerial.print("°C 습도: ");
+    BTSerial.print(humidity);
+    BTSerial.print("% 토양 습도: ");
+    BTSerial.print(soilMoistureValue);
 
   }
 
