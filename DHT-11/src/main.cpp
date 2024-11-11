@@ -59,10 +59,9 @@ void loop() {
   }
 
   if(currentMillis-previousMillis>=interval){
-  humidity = dht.readHumidity();
-  temperature = dht.readTemperature();
-
-  soilMoistureValue = analogRead(SOIL_MOISTURE_PIN);
+    humidity = dht.readHumidity();
+    temperature = dht.readTemperature();
+    soilMoistureValue = analogRead(SOIL_MOISTURE_PIN);
 
   if(isnan(humidity)||isnan(temperature)){
     Serial.println("DHT 센서 오류: 데이터를 읽을 수 없습니다.");
